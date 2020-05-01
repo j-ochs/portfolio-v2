@@ -1,16 +1,12 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Portfolio
+Source code for my personal portfolio. View the live site [here!](https://jochs.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd8d885b-0f04-4c31-94e7-660db16750e5/deploy-status)](https://app.netlify.com/sites/jochs/deploys)
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Technologies used:
+- Gatsby
+- React
+- Sass
+- Netlify
 
 ## 🚀 Quick start
 

@@ -1,8 +1,12 @@
+const config = require('./src/config');
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: config.siteTitle,
+    description: config.siteDescription,
+    url: config.siteUrl,
+    image: `src/images/jacob_ochs_tux.JPG`,
+    author: `${config.name} | ${config.email}`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +18,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -27,8 +32,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
