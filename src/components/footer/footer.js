@@ -7,7 +7,7 @@ export const Footer = () => {
   
   return (
     <footer>
-      <p className="sitemap">footer sitemap!</p>
+      <a className="sitemap" href="/sitemap.xml">footer sitemap!</a>
           © {new Date().getFullYear()} Created by {config.name}
           {` `}
           {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}

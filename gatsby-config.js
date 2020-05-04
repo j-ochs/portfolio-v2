@@ -4,12 +4,14 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
-    url: config.siteUrl,
+    keywords: config.siteKeywords,
+    siteUrl: config.siteUrl,
     image: `src/images/jacob_ochs_tux.JPG`,
     author: `${config.name} | ${config.email}`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

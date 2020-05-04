@@ -18,6 +18,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            keywords
             author
           }
         }
@@ -25,7 +26,9 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
+  console.log('site', site.siteMetadata)
   const metaDescription = description || site.siteMetadata.description
+  const metaKeywords = site.siteMetadata.keywords
 
   return (
     <Helmet
@@ -40,8 +43,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `keywords`,
+          content: metaKeywords,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: `${site.siteMetadata.title} | ${title}`,
         },
         {
           property: `og:description`,
@@ -61,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${site.siteMetadata.title} | ${title}`,
         },
         {
           name: `twitter:description`,
