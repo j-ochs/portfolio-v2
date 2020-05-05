@@ -1,18 +1,14 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import './header.scss'
+import Nav from '../Nav/Nav'
+
+import styles from './Header.module.scss'
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div className="content">
-      <h1 style={{ margin: 0 }}>
-        <Link to="/" className="link">
-          {siteTitle}
-        </Link>
-      </h1>
-      <Link to="/page-2/">to page 2</Link>
+    <div className={styles.content}>
+      <Nav title={siteTitle}/>
     </div>
   </header>
 )

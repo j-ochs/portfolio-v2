@@ -10,26 +10,38 @@ module.exports = {
   location: 'Santa Barbara, CA',
   email: 'jaochs7@gmail.com',
   github: 'https://github.com/j-ochs',
-  socialMedia: [
+  social: [
     {
-      name: 'GitHub',
-      url: 'https://github.com/j-ochs',
+      name: 'Email',
+      url: 'mailto:jaochs7@gmail.com',
     },
     {
-      name: 'Linkedin',
+      name: 'Linkedin profile link',
       url: 'https://www.linkedin.com/in/jacobochs',
-    }
+    },
+    {
+      name: 'GitHub profile link',
+      url: 'https://github.com/j-ochs',
+    },
   ],
 
   navLinks: [
     {
-      name: 'About',
-      url: '/#about',
+      name: 'Home',
+      url: '/',
+    },
+    {
+      name: 'Experience',
+      url: '/experience/',
+    },
+    {
+      name: 'Blog',
+      url: '/blog/',
     },
     {
       name: 'Contact',
-      url: '/#contact',
-    },
+      url: '/contact/',
+    }
   ],
   colors: {
     lightPrimary1: '#2e86ab',
