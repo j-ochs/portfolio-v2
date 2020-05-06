@@ -1,0 +1,13 @@
+.card {
+  border: 1px solid tan;
+  background: lightgrey;
+  padding: 1em;
+  margin-bottom: 3em;
+  max-width: 702px;
+
+  a {
+    &:hover {
+      border-bottom: 2px solid black;
+    }
+  }
+}

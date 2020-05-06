@@ -4,6 +4,10 @@
 
   .title {
     padding: 1em 1em;
+    
+    &:hover {
+      color: #fff;
+    }
   }
 
   a {

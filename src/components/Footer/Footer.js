@@ -1,44 +1,35 @@
-import React from 'react'
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
-import config from '../../config'
+import { withPrefix } from 'gatsby'
+import React from "react"
+import { FaEnvelope, FaGithub, FaLinkedin, FaFile } from "react-icons/fa"
+import config from "../../config"
 
-import styles from './Footer.module.scss'
+import styles from "./Footer.module.scss"
+
 
 export const Footer = () => {
-  
-  const { social } = config;
-  console.log('styles', styles);
+  const iconNames = [FaEnvelope, FaGithub, FaLinkedin, FaFile]
   return (
     <footer>
-      <span className={styles.colophon}>© {new Date().getFullYear()} Created by {config.name}</span>
+      <span className={styles.colophon}>
+        © {new Date().getFullYear()} Created by {config.name}
+      </span>
       <ul>
-        <li>
-          <a href={social[0].url} 
-            aria-label={social[0].name}
-            target="_blank"
-            rel="external noopener noreferrer"
-          >
-            <FaEnvelope />
-          </a>
-        </li>
-        <li>
-          <a href={social[1].url}
-            alt={social[1].name}
-            target="_blank"
-            rel="external noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-        </li>
-        <li>
-          <a href={social[2].url}
-            alt={social[2].name}
-            target="_blank"
-            rel="external noopener noreferrer"
-          >
-            <FaGithub />
-          </a>
-        </li>
+        {config.contact.map((resource, i) => {
+          const IconName = iconNames[i]
+          return (
+            <li key={i}>
+              <a
+                href={withPrefix(resource.url)}
+                aria-label={resource.name}
+                target="_blank"
+                title={resource.name}
+                rel="external noopener noreferrer"
+              >
+                <IconName />
+              </a>
+            </li>
+          )
+        })}
       </ul>
     </footer>
   )

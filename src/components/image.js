@@ -26,7 +26,12 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} alt={'Profile photo of Jacob Ochs looking dapper in a tuxedo'} />
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      alt={"Profile photo of Jacob Ochs looking dapper in a tuxedo"}
+    />
+  )
 }
 
 export default Image

@@ -22,6 +22,15 @@ section,
 summary {
   display: block;
 }
+header, footer {
+  a {
+    color: #fff;
+
+    &:hover {
+      color: lightgrey;
+    }
+  }
+}
 audio,
 canvas,
 progress,
@@ -41,12 +50,9 @@ template {
 }
 a {
   background-color: transparent;
-  color: #fff;
   text-decoration: inherit;
   -webkit-text-decoration-skip: objects;
-  &:hover {
-    color: lightgrey;
-  }
+  color: inherit;
 }
 a:active,
 a:hover {
