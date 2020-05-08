@@ -16,10 +16,11 @@ export const Footer = () => {
       <ul>
         {config.contact.map((resource, i) => {
           const IconName = iconNames[i]
+          const url = resource.name === "Resume" ? withPrefix(resource.url) : resource.url
           return (
             <li key={i}>
               <a
-                href={withPrefix(resource.url)}
+                href={url}
                 aria-label={resource.name}
                 target="_blank"
                 title={resource.name}
