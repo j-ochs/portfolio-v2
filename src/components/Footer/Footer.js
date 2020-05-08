@@ -7,7 +7,7 @@ import styles from "./Footer.module.scss"
 
 
 export const Footer = () => {
-  const iconNames = [FaEnvelope, FaGithub, FaLinkedin, FaFile]
+  const iconNames = [FaEnvelope, FaLinkedin, FaGithub, FaFile]
   return (
     <footer>
       <span className={styles.colophon}>

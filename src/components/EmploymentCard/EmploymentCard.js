@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import styles from "./EmploymentCard.module.scss"
+import TechnologyPill from "./TechnologyPill/TechnologyPill";
 
 const EmploymentCard = ({ data }) => {
   const { company, companyLink, title, description, duration, techStack } = data;
@@ -17,13 +18,20 @@ const EmploymentCard = ({ data }) => {
           {company}
         </a>
       </h4>
-      <span>{duration}</span>
-      {description.map((line, i) => (
-        <span key={i}>{line}</span>
-      ))}
-      {techStack.map((tech, i) => (
-        <span key={i}>{tech}</span>
-      ))}
+      <div className={styles.label}>{duration}</div>
+      <div>
+        <ul>
+          {description.map((line, i) => (
+            <li key={i}>{line}</li>
+          ))}
+        </ul>
+      </div>
+      <div className={styles.pillContainer}>
+        <span className={styles.label}>Tech Stack:</span>
+        {techStack.map((technology, i) => (
+          <TechnologyPill key={i} technology={technology}></TechnologyPill>
+        ))}
+      </div>
     </div>
   )
 }
