@@ -1,13 +1,13 @@
 import { withPrefix } from 'gatsby'
 import React from "react"
-import { FaEnvelope, FaGithub, FaLinkedin, FaFile } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa"
 import config from "../../config"
 
 import styles from "./Footer.module.scss"
 
 
 export const Footer = () => {
-  const iconNames = [FaEnvelope, FaLinkedin, FaGithub, FaFile]
+  const iconNames = [FaEnvelope, FaLinkedin, FaGithub, FaFileAlt]
   return (
     <footer>
       <span className={styles.colophon}>

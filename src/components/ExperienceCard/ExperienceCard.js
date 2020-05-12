@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import styles from "./EmploymentCard.module.scss"
+import styles from "./ExperienceCard.module.scss"
 import TechnologyPill from "./TechnologyPill/TechnologyPill";
 
-const EmploymentCard = ({ data }) => {
+const ExperienceCard = ({ data }) => {
   const { company, companyLink, title, description, duration, techStack } = data;
   return (
     <div className={styles.card}>
@@ -18,7 +18,7 @@ const EmploymentCard = ({ data }) => {
           {company}
         </a>
       </h4>
-      <div className={styles.label}>{duration}</div>
+      <span className={styles.label}>{duration}</span>
       <div>
         <ul>
           {description.map((line, i) => (
@@ -36,8 +36,8 @@ const EmploymentCard = ({ data }) => {
   )
 }
 
-EmploymentCard.propTypes = {
+ExperienceCard.propTypes = {
   data: PropTypes.object,
 }
 
-export default EmploymentCard
+export default ExperienceCard

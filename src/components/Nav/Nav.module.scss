@@ -3,6 +3,7 @@
   justify-content: space-between;
 
   .title {
+    height: min-content;
     padding: 1em 1em;
     
     &:hover {

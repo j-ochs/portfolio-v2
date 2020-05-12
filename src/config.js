@@ -27,7 +27,6 @@ module.exports = {
       url: "resume.pdf"
     }
   ],
-
   navLinks: [
     {
       name: "Home",
@@ -43,9 +42,8 @@ module.exports = {
     }
   ],
   colors: {
-    lightPrimary1: "#2e86ab",
     green: "#64ffda",
-    navy: "#0a192f",
-    darkNavy: "#020c1b"
+    darkBlueGrey: "rgb(63, 82, 99)",
+    lightGrey: "#E8E8E8",
   }
 }
