@@ -14,6 +14,12 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `jochs-v2`
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         // CommonMark mode (default: true)

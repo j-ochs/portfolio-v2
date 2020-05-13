@@ -29,9 +29,9 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang
       }}
-      link={favicon}
+      link={[{favicon}]}
       title={title}
-      titleTemplate={`${site.siteMetadata.title} | %s`}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
