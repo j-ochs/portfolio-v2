@@ -11,7 +11,14 @@ module.exports = {
       ],
       duration: "June 2018 - April 2020",
       title: "Software Development Engineer",
-      techStack: ["Typescript", "HTML/Sass", "Electron", "React", "Angular", "angular.js"]
+      techStack: [
+        "Typescript",
+        "HTML/Sass",
+        "Electron",
+        "React",
+        "Angular",
+        "angular.js"
+      ]
     },
     {
       company: "Westmont College",

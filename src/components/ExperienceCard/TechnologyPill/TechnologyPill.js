@@ -12,7 +12,7 @@ const TechnologyPill = ({ technology }) => {
 }
 
 TechnologyPill.propTypes = {
-  technology: PropTypes.string.isRequired,
+  technology: PropTypes.string.isRequired
 }
 
 export default TechnologyPill

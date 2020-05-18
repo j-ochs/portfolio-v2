@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import styles from "./ExperienceCard.module.scss"
-import TechnologyPill from "./TechnologyPill/TechnologyPill";
+import TechnologyPill from "./TechnologyPill/TechnologyPill"
 
 const ExperienceCard = ({ data }) => {
-  const { company, companyLink, title, description, duration, techStack } = data;
+  const { company, companyLink, title, description, duration, techStack } = data
   return (
     <div className={styles.card}>
       <h4>
@@ -37,7 +37,7 @@ const ExperienceCard = ({ data }) => {
 }
 
 ExperienceCard.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.object
 }
 
 export default ExperienceCard

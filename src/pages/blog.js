@@ -3,10 +3,11 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TechnologyPill from "../components/ExperienceCard/TechnologyPill/TechnologyPill"
 
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
-  console.log('posts', posts);
+  console.log("posts", posts)
   return (
     <Layout>
       <SEO title="Blog" />
@@ -16,21 +17,22 @@ const BlogPage = ({ data }) => {
         return (
           <article key={node.fields.slug}>
             <header>
-              <h3
-                style={{
-                  // marginBottom: rhythm(1 / 4),
-                }}
-              >
+              <h3>
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
+              <div>
+                {node.frontmatter.keywords.map((keyword, i) => (
+                  <TechnologyPill technology={keyword} key={i} />
+                ))}
+              </div>
             </header>
             <section>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: node.frontmatter.description || node.excerpt
                 }}
               />
             </section>
@@ -62,6 +64,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            keywords
           }
         }
       }

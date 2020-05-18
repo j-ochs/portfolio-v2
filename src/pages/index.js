@@ -15,11 +15,17 @@ const IndexPage = () => (
       </div>
       <div>
         <span>
-          When I'm not coding, I enjoy playing beach volleyball, surfing, and building
-          things out of wood.
+          When I'm not coding, I enjoy playing beach volleyball and
+          building things out of wood.
         </span>
       </div>
-      <div style={{ maxWidth: `250px`, marginBottom: `1.45rem`, borderRadius: `.5rem` }}>
+      <div
+        style={{
+          maxWidth: `250px`,
+          marginBottom: `1.45rem`,
+          borderRadius: `.5rem`
+        }}
+      >
         <Image />
       </div>
     </div>

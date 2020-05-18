@@ -1,12 +1,11 @@
 ---
-title: Electron Protocols & the OS 
+title: Electron Protocol Handler Registration
 date: "2015-05-01T22:12:03.284Z"
-description: "Register your Electron app as a native protocol handler"
+description: "How to register your Electron app as a native protocol handler"
+keywords: ["Electron", "scripting", "obscure", "OS-programming"]
 ---
 
-This is my first post on my new fake blog! How exciting!
-
-I'm sure I'll write a lot more interesting things in the future.
+During my time as an engineer at LogMeIn, I spent quite a bit of time with the Electron framework - nearly two years to be exact.
 
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).

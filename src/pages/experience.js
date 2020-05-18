@@ -6,7 +6,7 @@ import ExperienceCard from "../components/ExperienceCard/ExperienceCard"
 
 import { experience } from "../../content/experience"
 
-const ExperiencePage = () =>  (
+const ExperiencePage = () => (
   <Layout>
     <SEO title="Experience" />
     <h2>Where I've worked</h2>

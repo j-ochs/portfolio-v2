@@ -10,6 +10,7 @@ module.exports = {
     author: `${config.name} | ${config.email}`
   },
   plugins: [
+    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
@@ -22,17 +23,12 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        // CommonMark mode (default: true)
         commonmark: true,
-        // Footnotes mode (default: true)
         footnotes: true,
-        // Pedantic mode (default: true)
         pedantic: true,
-        // GitHub Flavored Markdown mode (default: true)
         gfm: true,
-        // Plugins configs
-        plugins: [],
-      },
+        plugins: []
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,8 +41,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/content/blog`,
-      },
+        path: `${__dirname}/content/blog`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,

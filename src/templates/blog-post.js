@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { Disqus } from 'gatsby-plugin-disqus'
+import { Disqus } from "gatsby-plugin-disqus"
 
 import config from "../config"
 import Layout from "../components/layout"
@@ -14,9 +14,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   const disqusConfig = {
-    url: `${config.siteUrl+location.pathname}`,
+    url: `${config.siteUrl + location.pathname}`,
     identifier: post.id,
-    title: post.title,
+    title: post.title
   }
 
   return (
@@ -29,7 +29,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <header className="postHeader">
           <h1
             style={{
-              marginBottom: 0,
+              marginBottom: 0
             }}
           >
             {post.frontmatter.title}
@@ -43,13 +43,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            // marginBottom: rhythm(1),
-          }}
-        />
-        <footer>
-        </footer>
+        <hr/>
+        <footer></footer>
       </article>
 
       <nav>
@@ -59,7 +54,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
+            padding: 0
           }}
         >
           <li>
