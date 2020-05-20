@@ -24,11 +24,11 @@ module.exports = {
     },
     {
       name: "Resume",
-      url: "resume.pdf"
+      url: "/resume.pdf"
     },
     {
       name: "RSS Feed",
-      url: "rss.xml"
+      url: "/rss.xml"
     },
   ],
   navLinks: [

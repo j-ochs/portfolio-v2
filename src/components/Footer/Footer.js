@@ -13,10 +13,10 @@ export const Footer = () => {
         © {new Date().getFullYear()} Created by {config.name}
       </span>
       <ul>
-        {config.footer.map(({ name, url}, i) => {
+        {config.footer.map(({ name, url }, i) => {
           const IconName = iconNames[i]
           const prefixedUrl =
-            name === "Resume" || "RSS Feed" ? withPrefix(url) : url
+            name === ("Resume" || "RSS Feed") ? withPrefix(url) : url
           return (
             <li key={i}>
               <a

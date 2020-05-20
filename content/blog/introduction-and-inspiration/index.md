@@ -13,6 +13,7 @@ With the goal of cultivating a spirit of lifelong learning, my writings will pri
 to record my thoughts and ideas, to further solidify an understanding of something that I have learned,
 or really to articulate any other idea which I thought interesting enough to record here.
 
+&nbsp;
 That said, I also seek to not only consume content, but also to create content to be shared and enjoyed. Having received an education in computer science and now working full-time as a software engineer, I believe that sharing my thoughts and learnings in this blog is one way in which I can "give back" to any who wish to read. So go ahead, have a read around! And feel free to drop a comment at the bottom of any post.
 
 ##### References & Inspiration:

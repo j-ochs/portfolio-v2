@@ -2,7 +2,7 @@
 title: How to Register Your Electron App as a Desktop Protocol Handler
 date: "2020-05-19T22:12:03.284Z"
 description: "How to register your Electron app as a desktop protocol handler"
-keywords: ["Electron", "Desktop Apps", "Install-scriptss", "OS-programming"]
+keywords: ["Electron", "Desktop Apps", "Install-script", "OS-programming"]
 ---
 
 During my time as an engineer at LogMeIn, I spent quite a bit of time with the <a href="https://electronjs.org/" target="_blank">Electron</a> framework - nearly two years to be exact. Electron is a framework used to build desktop apps using web technologies.

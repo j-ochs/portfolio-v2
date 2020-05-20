@@ -8,20 +8,15 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h2>Hey, I'm Jacob.</h2>
-    <div>
-      <p>I'm a software engineer based in Santa Barbara, California.</p>
-      <div>
-        <span>I have cool skillz</span>
-      </div>
-      <div>
-        <span>
-          When I'm not coding, I enjoy playing beach volleyball and
-          building things out of wood.
-        </span>
-      </div>
+    <div style={{
+      display: `flex`
+    }}>
+      <p>I'm a software engineer based in Santa Barbara, California. <br/>When I'm not coding, I enjoy playing beach volleyball and
+          building things out of wood.</p>
       <div
         style={{
           maxWidth: `250px`,
+          minWidth: `33%`,
           marginBottom: `1.45rem`,
           borderRadius: `.5rem`
         }}

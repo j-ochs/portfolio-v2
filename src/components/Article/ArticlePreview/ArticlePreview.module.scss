@@ -1,0 +1,41 @@
+.article {
+  border-radius: 6px;
+  margin-bottom: 1.5em;
+  transition: background .2s;
+
+  &:hover {
+    background: #E8E8E8;
+    cursor: pointer;
+  }
+
+  .postHeader {
+    a {
+      color: black;
+  
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  &header {
+    border-radius: 5px 5px 0 0;
+    justify-content: left;
+    margin-bottom: 0;
+    padding: .5em 1em .5em 1em;
+  }
+
+  h3 {
+    color: black;
+    margin-bottom: 0;
+  }
+
+  .pillContainer {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: .5em 1em .5em 1em;
+  }
+}
