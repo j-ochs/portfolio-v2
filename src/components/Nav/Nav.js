@@ -8,7 +8,6 @@ import config from "../../config"
 import styles from "./Nav.module.scss"
 
 const Nav = siteTitle => {
-  console.log("siteTitle", siteTitle)
 
   const isSmallScreen = () => {
     return false

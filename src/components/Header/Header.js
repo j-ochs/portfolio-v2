@@ -8,7 +8,7 @@ import styles from "./Header.module.scss"
 const Header = ({ siteTitle }) => {
   console.log("head", siteTitle)
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.content}>
         <Nav title={siteTitle} />
       </div>

@@ -1,10 +1,10 @@
-.article {
-  background: #E8E8E8;
-  border: 2px solid tan;
+article {
+  // background: #E8E8E8;
+  // border: 2px solid tan;
   border-radius: 6px;
   margin-bottom: 2em;
 
-  &.postHeader {
+  &header {
     border-radius: 5px 5px 0 0;
     color: #fff;
     justify-content: left;
@@ -19,4 +19,3 @@
     padding: .5em 1em .5em 1em;
   }
 }
-

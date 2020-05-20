@@ -2,7 +2,7 @@
 title: Introduction & Inspiration
 date: "2020-05-12T21:49:32.169Z"
 description: Ramblings on the purpose and vision for this blog.
-keywords: ["test"]
+keywords: []
 ---
 
 #### Hello! Allow me to tell you a bit about my vision for this blog.
@@ -19,4 +19,4 @@ That said, I also seek to not only consume content, but also to create content t
 
 Much inspiration for my writings is drawn from these people who, whether they know it or not, have done much to shape my views on computer science/software engineering, as well as many other more important facets of life and learning:
 
-> <a href="https://www.westmont.edu/_academics/departments/computer_science/iba/teaching/lifesyllabus.html" target="_blank">Wayne Iba</a> > <a href="https://www.djp3.net/" target="_blank">Don Patterson</a> > <a href="https://ole.michelsen.dk/" target="_blank">Ole Michelsen</a> > <a href="https://johnnyrodgers.is/" target="_blank">Johnny Rodgers</a>
+> <a href="https://www.westmont.edu/_academics/departments/computer_science/iba/teaching/lifesyllabus.html" target="_blank">Wayne Iba</a>  <a href="https://www.djp3.net/" target="_blank">Don Patterson</a>  <a href="https://ole.michelsen.dk/" target="_blank">Ole Michelsen</a>  <a href="https://johnnyrodgers.is/" target="_blank">Johnny Rodgers</a>

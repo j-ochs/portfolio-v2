@@ -1,11 +1,11 @@
 ---
-title: Electron Protocol Handler Registration
-date: "2015-05-01T22:12:03.284Z"
-description: "How to register your Electron app as a native protocol handler"
-keywords: ["Electron", "scripting", "obscure", "OS-programming"]
+title: How to Register Your Electron App as a Desktop Protocol Handler
+date: "2020-05-19T22:12:03.284Z"
+description: "How to register your Electron app as a desktop protocol handler"
+keywords: ["Electron", "Desktop Apps", "Install-scriptss", "OS-programming"]
 ---
 
-During my time as an engineer at LogMeIn, I spent quite a bit of time with the Electron framework - nearly two years to be exact.
+During my time as an engineer at LogMeIn, I spent quite a bit of time with the <a href="https://electronjs.org/" target="_blank">Electron</a> framework - nearly two years to be exact. Electron is a framework used to build desktop apps using web technologies.
 
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).

@@ -9,7 +9,7 @@ module.exports = {
   name: "Jacob Ochs",
   location: "Santa Barbara, CA",
   email: "jaochs7@gmail.com",
-  contact: [
+  footer: [
     {
       name: "Email",
       url: "mailto:jaochs7@gmail.com"
@@ -25,7 +25,11 @@ module.exports = {
     {
       name: "Resume",
       url: "resume.pdf"
-    }
+    },
+    {
+      name: "RSS Feed",
+      url: "rss.xml"
+    },
   ],
   navLinks: [
     {

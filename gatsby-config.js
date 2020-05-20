@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-eslint`,
+    `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,

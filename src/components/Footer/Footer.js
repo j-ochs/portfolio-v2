@@ -1,29 +1,29 @@
 import { withPrefix } from "gatsby"
 import React from "react"
-import { FaEnvelope, FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa"
+import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin, FaRss } from "react-icons/fa"
 import config from "../../config"
 
 import styles from "./Footer.module.scss"
 
 export const Footer = () => {
-  const iconNames = [FaEnvelope, FaLinkedin, FaGithub, FaFileAlt]
+  const iconNames = [FaEnvelope, FaLinkedin, FaGithub, FaFileAlt, FaRss]
   return (
     <footer>
       <span className={styles.colophon}>
         © {new Date().getFullYear()} Created by {config.name}
       </span>
       <ul>
-        {config.contact.map((resource, i) => {
+        {config.footer.map(({ name, url}, i) => {
           const IconName = iconNames[i]
-          const url =
-            resource.name === "Resume" ? withPrefix(resource.url) : resource.url
+          const prefixedUrl =
+            name === "Resume" || "RSS Feed" ? withPrefix(url) : url
           return (
             <li key={i}>
               <a
-                href={url}
-                aria-label={resource.name}
+                href={prefixedUrl}
+                aria-label={name}
                 target="_blank"
-                title={resource.name}
+                title={name}
                 rel="external noopener noreferrer"
               >
                 <IconName />

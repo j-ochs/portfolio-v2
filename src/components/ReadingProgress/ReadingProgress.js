@@ -4,7 +4,6 @@ import React from "react"
 import styles from "./ReadingProgress.module.scss"
 
 const ReadingProgress = ({ siteTitle }) => {
-  console.log("head", siteTitle)
   return (
     <div>
       <div className={styles.content}></div>

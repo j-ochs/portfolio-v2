@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TechnologyPill from "../components/ExperienceCard/TechnologyPill/TechnologyPill"
 
+import styles from "./blog.module.scss"
+
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   console.log("posts", posts)
@@ -16,7 +18,7 @@ const BlogPage = ({ data }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
-            <header>
+            <header className={styles.myheader}>
               <h3>
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
