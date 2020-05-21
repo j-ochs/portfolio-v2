@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title={title} description={description || post.excerpt} />
       <Article post={post} date={date} keywords={keywords} title={title} previous={previous} next={next} />
-      <Disqus config={disqusConfig} style={{ marginBottom: `3em` }} />
+      <Disqus config={disqusConfig} style={{ marginBottom: `4em`, firstChild: { minHeight: `325px !important`, background: `purple` } }} />
     </Layout>
   )
 }

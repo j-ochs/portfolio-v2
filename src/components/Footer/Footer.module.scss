@@ -29,3 +29,13 @@ footer {
 .sitemap {
   background: pink;
 }
+
+@media only screen and (max-width: 760px) {
+  footer {
+    flex-direction: column-reverse;
+
+    .colophon {
+      margin-left: 0px;
+    }
+  }
+}
