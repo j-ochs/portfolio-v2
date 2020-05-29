@@ -11,18 +11,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
-
+  const { date, description, keywords, title } = post.frontmatter
   const disqusConfig = {
     url: `${config.siteUrl + location.pathname}`,
     identifier: post.id,
     title: post.title
   }
-  const { date, description, keywords, title } = post.frontmatter
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={title} description={description || post.excerpt} />
       <Article post={post} date={date} keywords={keywords} title={title} previous={previous} next={next} />
-      <Disqus config={disqusConfig} style={{ marginBottom: `4em`, firstChild: { minHeight: `325px !important`, background: `purple` } }} />
+      <Disqus config={disqusConfig} />
     </Layout>
   )
 }

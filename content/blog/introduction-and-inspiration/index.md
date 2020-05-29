@@ -14,4 +14,4 @@ to record my thoughts, to further solidify an understanding of something that I 
 or really to articulate any other idea which I thought interesting enough to record here.
 
 &nbsp;
-That said, I also seek to not only consume content, but also to create content to be shared and enjoyed by others (read: you). Having received an education in computer science and now working as a software engineer, I believe that sharing my thoughts and learnings in this blog is one way in which I can "give back" to any who wish to read. So go ahead, have a look around! And feel free to drop a comment at the bottom of the page.
+That said, I also seek to not only consume content, but also to create content to be shared and enjoyed by others. Having received an education in computer science and now working as a software engineer, I believe that sharing my thoughts and learnings in this blog is also one way in which I can "give back" to any who wish to read. So go ahead, have a look around and feel free to drop a comment at the bottom of the page.

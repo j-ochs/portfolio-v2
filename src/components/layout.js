@@ -25,6 +25,15 @@ const Layout = ({ children }) => {
       }}
     >
       <Header siteTitle={data.site.siteMetadata.title} />
+      <p 
+        style={{
+          textAlign: `center`,
+          background: `darkred`,
+          color: `white`,
+          lineHeight: `1.5rem`,
+          marginTop: `-1.5rem`,
+          minWidth: `100%`
+        }}>This website is currently under construction (last updated May 2020)</p>
       <div
         style={{
           margin: `0 auto`,

@@ -1,6 +1,6 @@
 # Portfolio
 
-Hello, you've found the code for my personal portfolio website - view the live site [here!](https://jochs-v2.netlify.app/)
+Hello! You've found the code for my personal portfolio website - view the live site [here](https://jochs-v2.netlify.app/)
 
 ## Technologies used:
 
