@@ -22,7 +22,6 @@ export const Footer = () => {
               <a
                 href={prefixedUrl}
                 aria-label={name}
-                target="_blank"
                 title={name}
                 rel="external noopener noreferrer"
               >

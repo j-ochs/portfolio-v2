@@ -45,5 +45,56 @@ module.exports = {
       title: "Web Application Developer Intern",
       techStack: ["Javascript", "MongoDB", "Express", "Angular", "Node.js"]
     }
+  ],
+  projects: [
+    {
+      title: "GoToConnect",
+      category: "Professional - LogMeIn",
+      description: [
+        "With a team of three other engineers, I began the development of our project's Electron app and led it’s onboarding to another team of twenty engineers",
+        "Collaborated closely with the UX and Product teams to implement features and manage timelines",
+      ],
+      duration: "October 2018 - April 2020",
+      learnMore: "https://goto.com/connect",
+      techStack: [
+        "Typescript",
+        "HTML/Sass",
+        "Electron",
+        "React",
+        "Angular",
+        "angular.js"
+      ],
+    },
+    {
+      title: "GoToStage",
+      category: "Professional - LogMeIn",
+      description: [
+        "With a team of three other engineers, I began the development of our project's Electron app and led it’s onboarding to another team of twenty engineers",
+        "Collaborated closely with the UX and Product teams to implement features and manage timelines",
+      ],
+      duration: "June 2018 - August 2018",
+      learnMore: "https://gotostage.com",
+      techStack: [
+        "JavaScript",
+        "React",
+        "Google Speach-to-Text",
+      ],
+    },
+    {
+      title: "Firesim",
+      category: "Personal",
+      description: [
+        "My final capstone project at Westmont College",
+        "A predictive wildfire simulator which uses real-time data and a mathematical scoring model to predict the course of a wildfire"
+      ],
+      duration: "February 2018 - May 2018",
+      learnMore: "https://github.com/j-ochs/firesim",
+      techStack: [
+        "TypeScript",
+        "Angular",
+        "GIS",
+      ],
+
+    }
   ]
 }

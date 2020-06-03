@@ -7,22 +7,23 @@ import styles from "./ArticlePreview.module.scss"
 
 const ArticlePreview = ({ date, description, keywords, title, slug }) => (
   <div className={styles.card}>
-    <Link to={slug}>
-      <article className={styles.article} key={slug}>
-        <header className={styles.postHeader}>
+    <article className={styles.article} key={slug}>
+      <header className={styles.postHeader}>
+        <Link to={slug}>
           <h3>{title}</h3>
-          <small>{date}</small>
-          <div className={styles.pillContainer}>
-            {keywords.map((keyword, j) => (
-              <TechnologyPill technology={keyword} key={j} />
-            ))}
-          </div>
-        </header>
-        <section>
-          <p dangerouslySetInnerHTML={{ __html: description }} />
-        </section>
-      </article>
-    </Link>
+        </Link>
+        <small>{date}</small>
+        <div className={styles.pillContainer}>
+          {keywords.map((keyword, j) => (
+            <TechnologyPill technology={keyword} key={j} />
+          ))}
+        </div>
+      </header>
+      <section>
+        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <Link to={slug}>Read more...</Link>
+      </section>
+    </article>
   </div>
 )
 

@@ -3,18 +3,10 @@
   margin-bottom: 1.5em;
   transition: background .2s;
 
-  &:hover {
-    background: #E8E8E8;
-    cursor: pointer;
-  }
-
   .postHeader {
     a {
       color: black;
-  
-      &:hover {
-        color: black;
-      }
+      text-decoration: none;
     }
   }
   &header {

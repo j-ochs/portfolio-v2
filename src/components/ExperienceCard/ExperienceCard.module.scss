@@ -1,18 +1,14 @@
 .card {
-  background: #E8E8E8;
-  border: 2px solid #dbc3a3;
   border-radius: 6px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1em;
   margin-bottom: 1em;
-  max-width: 780px;
 
-  a {
-    &:hover {
-      border-bottom: 2px solid black;
-    }
+  .image {
+    max-width: 885px;
+    width: -webkit-fill-available;
   }
 
   ul li {

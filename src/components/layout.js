@@ -1,6 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import { FaTimesCircle } from "react-icons/fa"
 
 import Header from "./Header/Header"
 import "../styles/styles.scss"
@@ -17,6 +18,18 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const bannerClicked = () => {
+    const banner = document.getElementById("banner")
+    if (banner) {
+      banner.style.opacity = '0'
+      setTimeout(() => {
+        localStorage.setItem('bannerClosed', true)
+        banner.parentNode.removeChild(banner)
+      }, 1000)
+    }
+  }
+  const bannerClosed = localStorage.getItem('bannerClosed')
+
   return (
     <div
       style={{
@@ -25,15 +38,30 @@ const Layout = ({ children }) => {
       }}
     >
       <Header siteTitle={data.site.siteMetadata.title} />
+      {!bannerClosed && (
       <p 
+        id="banner"
         style={{
-          textAlign: `center`,
           background: `darkred`,
           color: `white`,
           lineHeight: `1.5rem`,
           marginTop: `-1.5rem`,
-          minWidth: `100%`
-        }}>This website is currently under construction (last updated May 2020)</p>
+          minWidth: `100%`,
+          opacity: `inherit`,
+          transition: `1s`,
+          justifyContent: `center`,
+          display: `flex`,
+          position: `relative`,
+        }}>This website is currently under construction (last updated June 2020)
+          <FaTimesCircle style={{
+            margin: `2px`,
+            cursor: `pointer`,
+            position: `absolute`,
+            right: `0`
+          }}
+          onClick={bannerClicked}/>
+        </p>
+      )}
       <div
         style={{
           margin: `0 auto`,

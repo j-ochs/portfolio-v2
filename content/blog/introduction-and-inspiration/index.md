@@ -8,7 +8,7 @@ keywords: []
 #### So... why am I starting a blog?
 
 &nbsp;
-The main purpose of this blog is not to offer any new or transformational ideas or practices, nor is it's purpose to gain status in the software engineering community.
+The main purpose of this blog is not to offer any new or transformational ideas or practices.
 With the goal of cultivating a spirit of lifelong learning, my writings will primarily be for my own personal pedagogy -
 to record my thoughts, to further solidify an understanding of something that I have learned,
 or really to articulate any other idea which I thought interesting enough to record here.
