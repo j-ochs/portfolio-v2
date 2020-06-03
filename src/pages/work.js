@@ -36,10 +36,10 @@ const ExperiencePage = () => (
       return (
       <Layout>
         {projects.map((projectData, i) => (
-          <>
-            <ExperienceCard key={i} data={projectData} image={Object.values(data)[i]}></ExperienceCard>
+          <div key={i}>
+            <ExperienceCard data={projectData} image={Object.values(data)[i]}></ExperienceCard>
             <hr />
-          </>
+          </div>
         ))}
         <span>See
           <a

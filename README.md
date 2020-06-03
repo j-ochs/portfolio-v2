@@ -5,10 +5,11 @@ Hello! You've found the code for my personal portfolio website - view the live s
 ## Technologies used:
 
 - Gatsby
+- GraphQL
 - React
 - Sass
 - Netlify
 
 ## Deploy
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cd8d885b-0f04-4c31-94e7-660db16750e5/deploy-status)](https://app.netlify.com/sites/jochs-v2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4fb53e2c-dc57-487e-b0c9-332360d83723/deploy-status)](https://app.netlify.com/sites/jochs-v2/deploys)
