@@ -3,9 +3,9 @@ import { StaticQuery, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExperienceCard from "../components/ExperienceCard/ExperienceCard"
+import WorkItem from "../components/WorkItem/WorkItem"
 
-import { projects } from "../../content/experience"
+import { projects } from "../../content/work"
 
 const ExperiencePage = () => (
   <StaticQuery query={graphql`
@@ -31,25 +31,33 @@ const ExperiencePage = () => (
             }
           }
         }
+        plusOne: file(relativePath: {eq: "plus-one.png"}) {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `} render={(data) => {
       return (
       <Layout>
+        <SEO title="Work" />
         {projects.map((projectData, i) => (
           <div key={i}>
-            <ExperienceCard data={projectData} image={Object.values(data)[i]}></ExperienceCard>
+            <WorkItem data={projectData} image={Object.values(data)[i]}></WorkItem>
             <hr />
           </div>
         ))}
-        <span>See
-          <a
-              href="/resume.pdf"
-              aria-label="Resume"
-              title="Resume"
-              rel="external noopener noreferrer"
-            > my resume </a>
-            for an in-depth look at my skills and employment experience.
-        </span>
+        <p style={{
+          textAlign: `center`
+        }}>See my <a
+            href="/resume.pdf"
+            aria-label="Resume"
+            title="Resume"
+            rel="external noopener noreferrer"
+          >resume</a> for a closer look at my skills and employment experience.
+        </p>
       </Layout>
     )
     }}

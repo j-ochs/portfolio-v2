@@ -1,30 +1,48 @@
 import React from "react"
+import { graphql, useStaticQuery } from 'gatsby'
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h2>Hey, I'm Jacob.</h2>
-    <div style={{
-      display: `flex`
-    }}>
-      <p>I'm a software engineer based in Santa Barbara, California. <br/>When I'm not coding, I enjoy playing beach volleyball and
-          building things out of wood.</p>
-      <div
-        style={{
-          maxWidth: `250px`,
-          minWidth: `33%`,
-          marginBottom: `1.45rem`,
-          borderRadius: `.5rem`
-        }}
-      >
-        <Image />
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "jacob_ochs_tux.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 250) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h2>Hey, I'm Jacob.</h2>
+      <div style={{
+        display: `flex`
+      }}>
+        <p>I'm a software engineer based in Santa Barbara, California. <br/>When I'm not coding, I enjoy playing beach volleyball and
+            building things out of wood.</p>
+        <div
+          style={{
+            maxWidth: `250px`,
+            minWidth: `33%`,
+            marginBottom: `1.45rem`,
+            borderRadius: `.5rem`
+          }}
+        >
+          <Img
+            fluid={data.placeholderImage.childImageSharp.fluid}
+            alt={"Profile photo of Jacob Ochs looking dapper in a tuxedo"}
+          />
+        </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default IndexPage

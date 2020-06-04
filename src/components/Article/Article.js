@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import TechnologyPill from "../ExperienceCard/TechnologyPill/TechnologyPill"
+import KeywordPill from "../KeywordPill/KeywordPill"
 import styles from "./Article.module.scss"
 
 const Article = ({ post, date, keywords, title, previous, next }) => {
@@ -14,7 +14,7 @@ const Article = ({ post, date, keywords, title, previous, next }) => {
           <span className={styles.metaDate}>Article posted on {date}</span>
           <div className={styles.keywordContainer}>
             {keywords.map((keyword, i) => (
-              <TechnologyPill technology={keyword} key={i} />
+              <KeywordPill keyword={keyword} key={i} />
             ))}
           </div>
         </header>

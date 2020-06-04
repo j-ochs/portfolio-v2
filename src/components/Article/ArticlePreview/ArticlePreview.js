@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import TechnologyPill from "../../ExperienceCard/TechnologyPill/TechnologyPill"
+import KeywordPill from "../../KeywordPill/KeywordPill"
 import styles from "./ArticlePreview.module.scss"
 
 const ArticlePreview = ({ date, description, keywords, title, slug }) => (
@@ -15,7 +15,7 @@ const ArticlePreview = ({ date, description, keywords, title, slug }) => (
         <small>{date}</small>
         <div className={styles.pillContainer}>
           {keywords.map((keyword, j) => (
-            <TechnologyPill technology={keyword} key={j} />
+            <KeywordPill keyword={keyword} key={j} />
           ))}
         </div>
       </header>
