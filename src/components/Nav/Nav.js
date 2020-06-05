@@ -7,31 +7,21 @@ import config from "../../config"
 
 import styles from "./Nav.module.scss"
 
-const Nav = siteTitle => {
-
-  const isSmallScreen = () => {
-    return false
-  }
-
-  return (
-    <nav className={styles.wrapper}>
-      <Link to="/" className={styles.title}>
-        {siteTitle.title}
-      </Link>
-      {isSmallScreen() ? (
-        <p>small screen yo!</p>
-      ) : (
-        <ul>
-          {config.navLinks.map(({ url, name }, i) => (
-            <li key={i}>
-              <Link to={url}>{name}</Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </nav>
-  )
-}
+const Nav = siteTitle => (
+  <nav className={styles.wrapper}>
+    <Link to="/" className={styles.title}>
+      {siteTitle.title}
+    </Link>
+    <ul>
+      {config.navLinks.map(({ url, name }, i) => (
+        <li key={i}>
+          <Link to={url}>{name}</Link>
+        </li>
+      ))}
+    </ul>
+  )}
+  </nav>
+)
 
 Nav.propTypes = {
   siteTitle: PropTypes.string
