@@ -3,7 +3,7 @@ module.exports = {
     {
       title: "GoToConnect",
       description: [
-        "A unified communication and collaboration (UCC) app by LogMeIn - essentially a one-stop-shop for all communication",
+        "A unified communication and collaboration (UCC) app by LogMeIn - a one-stop-shop for all communication",
         "Provides functionality for telephony, sms/text, voicemail, meeting, meeting recording, and more",
         "With a team of three other engineers, I began the development of the GoToConnect Electron app",
       ],
