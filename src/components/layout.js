@@ -18,10 +18,12 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const bannerClosed = localStorage.getItem('bannerClosed')
+  const windowGlobal = typeof window !== 'undefined' && window
+  const bannerClosed = windowGlobal && localStorage.getItem('bannerClosed')
+
   const bannerClicked = () => {
     const banner = document.getElementById("banner")
-    if (banner) {
+    if (banner && windowGlobal) {
       banner.style.opacity = '0'
       setTimeout(() => {
         localStorage.setItem('bannerClosed', true)
