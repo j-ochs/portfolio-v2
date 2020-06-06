@@ -19,7 +19,6 @@ const Nav = siteTitle => (
         </li>
       ))}
     </ul>
-  )}
   </nav>
 )
 

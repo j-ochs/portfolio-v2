@@ -43,12 +43,13 @@ const ExperiencePage = () => (
       return (
       <Layout>
         <SEO title="Work" />
-        {projects.map((projectData, i) => (
-          <div key={i}>
-            <WorkItem data={projectData} image={Object.values(data)[i]}></WorkItem>
-            <hr />
-          </div>
-        ))}
+          {projects.map((projectData, i) => (
+            <WorkItem
+              data={projectData}
+              image={Object.values(data)[i]}
+              key={i}
+            />
+          ))}
         <p style={{
           textAlign: `center`
         }}>See my <a

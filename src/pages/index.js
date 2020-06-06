@@ -22,25 +22,23 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <h2>Hey, I'm Jacob.</h2>
-      <div style={{
+      <section style={{
         display: `flex`
       }}>
         <p>I'm a software engineer based in Santa Barbara, California. <br/>When I'm not coding, I enjoy playing beach volleyball and
-            building things out of wood.</p>
-        <div
+            building things out of wood.
+        </p>
+        <Img
+          fluid={data.placeholderImage.childImageSharp.fluid}
+          alt={"Profile photo of Jacob Ochs looking dapper in a tuxedo"}
           style={{
             maxWidth: `250px`,
             minWidth: `33%`,
             marginBottom: `1.45rem`,
             borderRadius: `.5rem`
           }}
-        >
-          <Img
-            fluid={data.placeholderImage.childImageSharp.fluid}
-            alt={"Profile photo of Jacob Ochs looking dapper in a tuxedo"}
-          />
-        </div>
-      </div>
+        />
+      </section>
     </Layout>
   )
 }
