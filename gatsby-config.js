@@ -6,7 +6,7 @@ module.exports = {
     description: config.siteDescription,
     keywords: config.siteKeywords,
     siteUrl: config.siteUrl,
-    image: `src/images/jacob_ochs_tux.JPG`,
+    image: `src/images/jacob-ochs-tux.jpeg`,
     author: `${config.name} | ${config.email}`
   },
   plugins: [

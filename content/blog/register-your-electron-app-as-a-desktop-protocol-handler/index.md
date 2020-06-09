@@ -1,5 +1,5 @@
 ---
-title: How to Register Your Electron App as a Desktop Protocol Handler
+title: Register Your Electron App as a Desktop Protocol Handler
 date: "2020-05-19T22:12:03.284Z"
 description: "But I thought Electron was a frontend framework?! Learn how to register your Electron app as a cross-platform desktop protocol handler."
 keywords: ["Electron", "Desktop Apps", "Install-Scripting", "NSIS", "LSHandlers"]

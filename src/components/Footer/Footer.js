@@ -14,7 +14,7 @@ export const Footer = () => {
       </span>
       <ul>
         {config.footer.map(({ name, url }, i) => {
-          const IconName = iconNames[i]
+          const Icon = iconNames[i]
           const prefixedUrl =
             name === ("Resume" || "RSS Feed") ? withPrefix(url) : url
           return (
@@ -25,7 +25,7 @@ export const Footer = () => {
                 title={name}
                 rel="external noopener noreferrer"
               >
-                <IconName />
+                <Icon />
               </a>
             </li>
           )
