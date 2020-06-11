@@ -7,11 +7,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Article from "../components/Article/Article"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
-  const { date, description, keywords, title } = post.frontmatter
+  // const { previous, next } = pageContext
+  const { date, description, imageAlt, imageSrc, keywords, title } = post.frontmatter
   const disqusConfig = {
     url: `${config.siteUrl + location.pathname}`,
     identifier: post.id,
@@ -19,8 +19,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   }
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={title} description={description || post.excerpt} />
-      <Article post={post} date={date} keywords={keywords} title={title} previous={previous} next={next} />
+      <SEO title={title} description={description || post.excerpt} keywords={keywords}/>
+      <Article post={post} date={date} imageAlt={imageAlt} imageSrc={imageSrc} keywords={keywords} title={title} />
       <Disqus config={disqusConfig} />
     </Layout>
   )
@@ -43,6 +43,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        imageAlt
+        imageSrc
         keywords
       }
     }

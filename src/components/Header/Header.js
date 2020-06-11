@@ -6,7 +6,6 @@ import Nav from "../Nav/Nav"
 import styles from "./Header.module.scss"
 
 const Header = ({ siteTitle }) => {
-  console.log("head", siteTitle)
   return (
     <header className={styles.header}>
       <div className={styles.content}>

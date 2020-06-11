@@ -31,6 +31,13 @@ const ExperiencePage = () => (
             }
           }
         }
+        esriEtc: file(relativePath: {eq: "esri-etc.png"}) {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         plusOne: file(relativePath: {eq: "plus-one.png"}) {
           childImageSharp {
             fluid(maxWidth: 1600) {

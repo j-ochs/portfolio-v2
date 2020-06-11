@@ -8,7 +8,11 @@ module.exports = {
         "With a team of three other engineers, I began the development of the GoToConnect Electron app",
       ],
       duration: "October 2018 - April 2020",
-      learnMore: "https://goto.com/connect",
+      image: "gotoconnect.png",
+      link: {
+        label: "Learn more",
+        to: "https://goto.com/connect"
+      },
       techStack: [
         "Typescript",
         "HTML/Sass",
@@ -27,7 +31,11 @@ module.exports = {
         "The transcript UI tracks with the playback of the video recording and provides interactivity between the two"
       ],
       duration: "June 2018 - August 2018",
-      learnMore: "https://gotostage.com",
+      image: "gotostage.png",
+      link: {
+        label: "Check it out",
+        to: "https://gotostage.com",
+      },
       techStack: [
         "JavaScript",
         "React",
@@ -42,12 +50,36 @@ module.exports = {
         "The final capstone project for my Computer Science education at Westmont College"
       ],
       duration: "February 2018 - May 2018",
-      learnMore: "https://github.com/j-ochs/firesim",
+      image: "firesim.png",
+      link: {
+        label: "Check it out",
+        to: "https://github.com/j-ochs/firesim"
+      },
       techStack: [
         "TypeScript",
         "Angular",
         "GIS",
         "APIs"
+      ],
+
+    },
+    {
+      title: "Esri Electronic Timecard",
+      description: [
+        "The internal company-wide timecard/payroll application - my first professional experience with front end development",
+        "During my internship, I developed a multi-field search to dynamically query for time-tracking charge codes and integrate these into your timecard",
+      ],
+      duration: "May 2017 - August 2017",
+      image: "esri-etc.png",
+      link: {
+        label: "Learn more about Esri",
+        to: "https://www.esri.com/en-us/about/about-esri/overview"
+      },
+      techStack: [
+        "TypeScript",
+        "NodeJS",
+        "Angular",
+        "MongoDB"
       ],
 
     },
@@ -58,7 +90,11 @@ module.exports = {
         "Uses the ArcGIS Javascript API to plan the most effective route between multiple destinations"
       ],
       duration: "July 2017",
-      learnMore: "https://github.com/j-ochs/plus-one",
+      image: "plus-one.png",
+      link: {
+        label: "Check it out",
+        to: "https://github.com/j-ochs/plus-one"
+      },
       techStack: [
         "Javascript",
         "GIS",

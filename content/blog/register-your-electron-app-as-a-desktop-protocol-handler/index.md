@@ -2,12 +2,14 @@
 title: Register Your Electron App as a Desktop Protocol Handler
 date: "2020-05-19T22:12:03.284Z"
 description: "But I thought Electron was a frontend framework?! Learn how to register your Electron app as a cross-platform desktop protocol handler."
+imageAlt: "Scenic view of Alabama Hills, California"
+imageSrc: "alabama-hills-crop-2.jpg"
 keywords: ["Electron", "Desktop Apps", "Install-Scripting", "NSIS", "LSHandlers"]
 ---
 
 I have recently been working on an Electron application. If you don't know what [Electron](https://electronjs.org/) is, just open up Slack or Visual Studio Code and viola! you're looking at an Electron app. Javascript+HTML+CSS in a "native" desktop application - what a beautiful sight it is.
 
-While most of the programming when working with Electron is usually in Javascript or Typescript, there does arise the occasional need to write some OS-level script or native C++ module which usually is completely foreign to a frontend developer like myself. In the case of registering the app as a protocol handler, that meant writing entries to the Windows Registry and the Apple LSHandlers dictionary. **Caution: this is low level stuff and could minorly screw up your machine if you aren't careful - proceed with care.**
+While most of the programming when working with Electron is usually in Javascript or Typescript, there does arise the occasional need to venture off the beaten path - writing some OS-level script or native C++ module which usually is completely foreign to a frontend developer like myself. In the case of registering the app as a protocol handler, that meant writing entries to the Windows Registry and the Apple LSHandlers dictionary. **Caution: this is low level stuff and could minorly screw up your machine if you aren't careful - proceed with care.**
 
 ### The Goal
 

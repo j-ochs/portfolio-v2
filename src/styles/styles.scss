@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 h2 {
   font-size: 1.62671rem;
@@ -370,8 +370,21 @@ pre tt:after {
   }
 }
 
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.6;
+  
+  ::not(a, footer) {
+    color: #4a4a4a;
+  }
+  
+  footer {
+    color: #fff;
+  }
+}
+
 .article {
-  // background: #E8E8E8;
   border-radius: 6px;
   margin-bottom: 2em;
 }

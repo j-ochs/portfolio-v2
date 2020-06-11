@@ -1,50 +1,32 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 
 import KeywordPill from "../KeywordPill/KeywordPill"
 import styles from "./Article.module.scss"
+import DynamicImage from "../dynamic-image"
 
-const Article = ({ post, date, keywords, title, previous, next }) => {
-  return (
-    <>
-      <article>
-        <header className={styles.myheader}>
-          <h1>{title}</h1>
-          <span className={styles.metaDate}>Article posted on {date}</span>
-          <div className={styles.keywordContainer}>
-            {keywords.map((keyword, i) => (
-              <KeywordPill keyword={keyword} key={i} />
-            ))}
-          </div>
-        </header>
-        <hr />
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <footer></footer>
-      </article>
+const Article = ({ post, date, imageAlt, imageSrc, keywords, title }) => (
+  <article>
+    <header>
+      <h1>{title}</h1>
+      <span className={styles.headerMeta}>Article posted on <time dateTime={date} itemProp="datePubished">{date}</time></span>
+      <div className={styles.keywordContainer}>
+        <span className={styles.headerMeta}>Topics: </span>
+        {keywords.map((keyword, i) => (
+          <KeywordPill keyword={keyword} key={i} />
+        ))}
+      </div>
+    </header>
+    <DynamicImage
+      alt={imageAlt}
+      className={styles.headerImage}
+      imgsrc={imageSrc}
+    />
+    <section dangerouslySetInnerHTML={{ __html: post.html }} />
+    <hr />
+  </article>
+)
 
-      <nav>
-        <ul className={styles.bottomNav}>
-          <li className={styles.navLink}>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li className={styles.navLink}>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
-    </>
-  )
-}
 
 Article.propTypes = {
   date: PropTypes.string.isRequired,

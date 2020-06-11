@@ -6,7 +6,7 @@ import styles from "./WorkItem.module.scss"
 import KeywordPill from "../KeywordPill/KeywordPill"
 
 const WorkItem = ({ data, image }) => {
-  const { description, duration, learnMore, techStack, title } = data
+  const { description, duration, link, techStack, title } = data
   return (
     <>
       <section className={styles.card}>
@@ -27,7 +27,7 @@ const WorkItem = ({ data, image }) => {
               <KeywordPill key={i} keyword={tech}></KeywordPill>
             ))}
           </div>
-          <a href={learnMore} >Check it out</a>
+            <a href={link.to}>{link.label}</a>
         </div>
       </section>
       <hr/>

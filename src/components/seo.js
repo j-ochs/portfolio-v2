@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import favicon from "../images/favicon.ico"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, keywords }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,9 +20,8 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  console.log("site from seo comp:", site)
   const metaDescription = description || site.siteMetadata.description
-  const metaKeywords = site.siteMetadata.keywords
+  const metaKeywords = keywords || site.siteMetadata.keywords
 
   return (
     <Helmet
@@ -84,7 +83,8 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  keywords: PropTypes.array || PropTypes.string
 }
 
 export default SEO

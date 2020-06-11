@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react"
 
 /*
 This component is used to avoid state flickers before the client-side JS is loaded.
