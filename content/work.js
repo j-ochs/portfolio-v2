@@ -4,7 +4,7 @@ module.exports = {
       title: "GoToConnect",
       description: [
         "A unified communication and collaboration (UCC) app by LogMeIn - a one-stop-shop for all communication",
-        "Provides functionality for telephony, sms/text, voicemail, meeting, meeting recording, and more",
+        "Provides functionality for telephony, sms/text, voicemail, meeting, and meeting recording",
         "With a team of three other engineers, I began the development of the GoToConnect Electron app",
       ],
       duration: "October 2018 - April 2020",

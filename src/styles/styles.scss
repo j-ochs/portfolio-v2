@@ -389,3 +389,7 @@ pre tt:after {
   margin-bottom: 2em;
 }
 
+// inline blog images
+.gatsby-resp-image-wrapper {
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.4);
+}

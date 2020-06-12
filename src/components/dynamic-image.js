@@ -48,7 +48,7 @@ export default class DynamicImage extends React.Component {
 }
 
 DynamicImage.propTypes = {
-  imgAlt: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string,
   imgsrc: PropTypes.string.isRequired,
-  className: PropTypes.object
+  className: PropTypes.string
 }

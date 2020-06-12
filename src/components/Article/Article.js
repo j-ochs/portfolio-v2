@@ -9,7 +9,7 @@ const Article = ({ post, date, imageAlt, imageSrc, keywords, title }) => (
   <article>
     <header>
       <h1>{title}</h1>
-      <span className={styles.headerMeta}>Article posted on <time dateTime={date} itemProp="datePubished">{date}</time></span>
+      <span className={styles.headerMeta}>Article by Jacob Ochs posted on <time dateTime={date} itemProp="datePubished">{date}</time></span>
       <div className={styles.keywordContainer}>
         <span className={styles.headerMeta}>Topics: </span>
         {keywords.map((keyword, i) => (
