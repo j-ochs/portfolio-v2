@@ -18,10 +18,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const shouldShowBanner = false
   const windowGlobal = typeof window !== 'undefined' && window
   const bannerClosed = windowGlobal && localStorage.getItem('bannerClosed')
 
-  const bannerClicked = () => {
+  const closeBannerClicked = () => {
     const banner = document.getElementById("banner")
     if (banner && windowGlobal) {
       banner.style.opacity = '0'
@@ -41,7 +42,7 @@ const Layout = ({ children }) => {
     >
       <Header siteTitle={data.site.siteMetadata.title} />
       <ClientOnly>
-        {!bannerClosed && (
+        {shouldShowBanner && !bannerClosed && (
         <p 
           id="banner"
           style={{
@@ -62,7 +63,7 @@ const Layout = ({ children }) => {
               position: `absolute`,
               right: `0`
             }}
-            onClick={bannerClicked}/>
+            onClick={closeBannerClicked}/>
           </p>
         )}
       </ClientOnly>

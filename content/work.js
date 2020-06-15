@@ -27,8 +27,8 @@ module.exports = {
       title: "GoToStage",
       description: [
         "A webinar video recording and sharing platform by LogMeIn",
-        "During my internship with LogMeIn, I created the frontend UI to aggregate and display an audio transcript of a webinar recording",
-        "The transcript UI tracks with the playback of the video recording and provides interactivity between the two"
+        "During my internship with LogMeIn, I created the front end UI to aggregate and display a transcript of a webinar recording",
+        "The transcript UI tracks with playback of the video recording and provides interactivity between the two"
       ],
       duration: "June 2018 - August 2018",
       image: "gotostage.png",
