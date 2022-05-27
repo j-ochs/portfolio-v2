@@ -24,7 +24,7 @@ module.exports = {
     },
     {
       name: "Resume",
-      url: "/resume.pdf"
+      url: "/jacob-ochs-resume-2022.pdf"
     },
     {
       name: "RSS Feed",

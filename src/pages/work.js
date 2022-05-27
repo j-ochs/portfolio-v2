@@ -60,7 +60,7 @@ const ExperiencePage = () => (
         <p style={{
           textAlign: `center`
         }}>See my <a
-            href="/resume.pdf"
+            href="/jacob-ochs-resume-2022.pdf"
             aria-label="Resume"
             title="Resume"
             rel="external noopener noreferrer"
